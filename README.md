@@ -16,7 +16,7 @@
   * Used data columns: VehicleID, TripID, TripType, Pickup Address, Dropoff Address, and more
 * <b>Output:</b> python dictionary of matched trip requests to vehicles (vehicles used for a given day, deployed for their respective hubs).
   * Additional information like Number of Riders, Waiting Time, Distance to Pickup, Desired Pickup Time, and more included in final output dictionary. 
-  * Output can be viewed in a Pandas DataFrame for better visability and usability for the intended user (Honda's Fleet Operations Manager)
+  * Output can be viewed in a Pandas DataFrame for better visibility and usability for the intended user (Honda's Fleet Operations Manager)
   
 <b>Model</b>
 * We created a custom model for the data APIs provided by [99P Labs](https://developer.99plabs.io/) using Nearest Neighbors (which organically developed its own clusters centered around the deployed vehicles), based on key features like <b>pickup and dropoff locations and distances, trip request time, driver-vehicle feasibility</b>, and more.
