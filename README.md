@@ -22,7 +22,7 @@
 * We created a custom model for the data APIs provided by [99P Labs](https://developer.99plabs.io/) using Nearest Neighbors (which organically developed its own clusters centered around the deployed vehicles), based on key features like <b>pickup and dropoff locations and distances, trip request time, driver-vehicle feasibility</b>, and more.
 * We first started with a simple model by relaxing these restrictions, limiting our training dataset, and developing around the goal of just maximizing the total number of trip requests that can be fulfilled in a given day while minimizing the average distance traveled.
 * After we were able to get a minimal model running, we integrated ideal restrictions (as listed above) for a more realistic and optimized fleet management system. 
-  * This time, our goal was to develop a model that achieves as close as possible to the simple model's goal achieved but with the new constraints included.
+  * The metrics used to measure the performance of the model are: the average distance to pickup, the drivers’ average waiting for the next nearest pickup, the number of assigned trips and the number of unassigned trips for the model. The ideal situation is to minimize the average distance to pickup, the average waiting time for the next nearest pickup and the number of unassigned trips for the model.
  
 ## Files
 <b>DBScan and POI Standardization.ipynb</b>
