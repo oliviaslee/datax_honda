@@ -27,7 +27,7 @@
 * After we were able to get a minimal model running, we integrated ideal restrictions (as listed above) for a more realistic and optimized fleet management system.
 * Different number of vehicles could be entered into the model and the results can be compared using the following.
   * The metrics used to measure the performance of the model are: the average distance to pickup, the drivers’ average waiting for the next nearest pickup, the number of assigned trips and the number of unassigned trips for the model. The ideal situation is to minimize the average distance to pickup, the average waiting time for the next nearest pickup and the number of unassigned trips for the model.
-* The model can be used to find the minimum number of vehilces required to complete all the trips for a day (or to complete the highest number of trips for one day the company has had within the past two years).
+* The model can be used to find the minimum number of vehicles required to complete all the trips for a day (or to complete the highest number of trips for one day the company has had within the past two years).
  
 ## Files
 <b>DBScan and POI Standardization.ipynb</b>
@@ -35,7 +35,7 @@
  
  <b>Honda_API.ipynb</b>
 * Since there were many data tables pulled from the API, we decided to perform correlation analysis to get a better understanding of the data at hand. Correlation matrices were only generated for tables with relevant features, such as trip requests, safety details, information about vehicle make/model (some designed to cater towards handicap features), etc.
-* Each table had a mix of numerical and categorical variables. In order to spot correlations between certain categories, categorical variables (event_type, distracted = True/False) were one-hot encoded and thus analyzed in this manner.
+* Each table had a mix of numerical and categorical variables. In order to spot correlations between certain categories, categorical variables (event_type, distracted = True/False, etc.) were one-hot encoded and thus analyzed in this manner.
 
 <b>clustering_model.ipynb</b>
 * In efforts to maximize profit, a clustering model was developed to minimize distance travelled by individual vehicles. 
