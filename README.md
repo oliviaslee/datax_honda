@@ -24,13 +24,12 @@
 * After we were able to get a minimal model running, we integrated ideal restrictions (as listed above) for a more realistic and optimized fleet management system. 
   * This time, our goal was to develop a model that achieves as close as possible to the simple model's goal achieved but with the new constraints included.
  
-## Files
-<b>DBScan and POI Stantardization.ipynb</b>
+<b>DBScan</b>
 * <insert information here>
  
  <b>Honda_API.ipynb</b>
 * Since there were many data tables pulled from the API, we decided to perform correlation analysis to get a better understanding of the data at hand. Correlation matrices were only generated for tables with relevant features, such as trip requests, safety details, information about vehicle make/model (some designed to cater towards handicap features), etc.
-* Each table had a mix of numerical and categorical variables. In order to spot correlations between certain categories, categorical variables (event_type, distracted = True/False) were one-hot encoded.
+* Each table had a mix of numerical and categorical variables. In order to spot correlations between certain categories, categorical variables (event_type, distracted = True/False) were one-hot encoded and thus analyzed in this manner.
 
 <b>clustering_model.ipynb</b>
 * In efforts to maximize profit, a clustering model was developed to minimize distance travelled by individual vehicles. 
