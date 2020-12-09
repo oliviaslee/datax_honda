@@ -14,7 +14,7 @@
 <b>Data Configuration</b>
 * <b>There are two key functions.</b> 
 * <b>For the first function, the input is:</b> The TripRequests table, the Medical Trips table and the number of vehicles. 
-* <b>The Output is:</b> A python dictionary where the key is the trip id and the value is the corresponding trip object.
+* <b>The Output:</b> A list that contains a python dictionary where the key is the trip id and the value is the trip object, and the eariest desired pickup time.
   * The trip object has attributes such as TripID, TripType, Number of riders, Pickup Address, Dropoff Address, scheduled timestamp (desired pickup time) etc.
 * <b>For the second function, the input is:</b> the dictionary returned by the first function and the number of vehicles. 
 * <b>The Output is:</b> A panda table of matched trip requests to vehicles deployed from their respective hubs.
