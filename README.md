@@ -24,7 +24,8 @@
 * After we were able to get a minimal model running, we integrated ideal restrictions (as listed above) for a more realistic and optimized fleet management system. 
   * This time, our goal was to develop a model that achieves as close as possible to the simple model's goal achieved but with the new constraints included.
  
-<b>DBScan</b>
+## Files
+<b>DBScan and POI Stantardization.ipynb</b>
 * <insert information here>
  
  <b>Honda_API.ipynb</b>
