@@ -12,7 +12,7 @@
 
 ## Approach
 <b>Data Configuration</b>
-* <b>For the model below, there are two key functions.</b> 
+* <b>The model has two key function.</b> 
 * <b>For the first function, the input is:</b> The TripRequests table, the Medical Trips table and the number of vehicles. 
 * <b>The Output:</b> A list that contains a python dictionary where the key is the trip id and the value is the trip object, and the eariest desired pickup time.
   * The trip object has attributes such as TripID, TripType, Number of riders, Pickup Address, Dropoff Address, scheduled timestamp (desired pickup time) etc.
