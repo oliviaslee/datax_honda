@@ -14,7 +14,7 @@
 <b>Data Configuration</b>
 * <b>Input:</b> pulled data tables from MicroTransit data API
   * Used data columns: VehicleID, TripID, TripType, Pickup Address, Dropoff Address, and more
-* <b>Output:</b> python dictionary of matched trip requests to vehicles (vehicles used for a given day, deployed for their respective hubs).
+* <b>Output:</b> python dictionary of matched trip requests to vehicles (vehicles used for a given day, deployed from their respective hubs).
   * Additional information like Number of Riders, Waiting Time, Distance to Pickup, Desired Pickup Time, and more included in final output dictionary. 
   * Output can be viewed in a Pandas DataFrame for better visibility and usability for the intended user (Honda's Fleet Operations Manager)
   
