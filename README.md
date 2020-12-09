@@ -17,8 +17,8 @@
 * <b>The Output is:</b> A python dictionary where the key is the trip id and the value is the corresponding trip object.
   * The trip object has attributes such as TripID, TripType, Number of riders, Pickup Address, Dropoff Address, scheduled timestamp (desired pickup time) etc.
 * <b>For the second function, the input is:</b> the dictionary returned by the first function and the number of vehicles. 
-* <b>The Output is:</b> A panda table of matched trip requests to vehicles (vehicles used for a given day, deployed from their respective hubs).
-  * Additional information like Number of Riders, Waiting Time, Distance to Pickup, Desired Pickup Time, and also included in the table. 
+* <b>The Output is:</b> A panda table of matched trip requests to vehicles deployed from their respective hubs.
+  * Additional information like Number of Riders, Waiting Time, Distance to Pickup, Desired Pickup Time etc. are also included in the table. 
   * The intended user is the Fleet Operations Manager.
   
 <b>Model</b>
