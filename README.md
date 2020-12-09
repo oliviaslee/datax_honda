@@ -12,17 +12,22 @@
 
 ## Approach
 <b>Data Configuration</b>
-* <b>Input:</b> pulled data tables from MicroTransit data API
-  * Used data columns: VehicleID, TripID, TripType, Pickup Address, Dropoff Address, and more
-* <b>Output:</b> python dictionary of matched trip requests to vehicles (vehicles used for a given day, deployed from their respective hubs).
-  * Additional information like Number of Riders, Waiting Time, Distance to Pickup, Desired Pickup Time, and more included in final output dictionary. 
-  * Output can be viewed in a Pandas DataFrame for better visibility and usability for the intended user (Honda's Fleet Operations Manager)
+* There are two key functions.
+* <b>For the first function, the input is:</b> The TripRequests table, the Medical Trips table and the number of vehicles. 
+* <b>The Output is:</b> A python dictionary where the key is the trip id and the value is the corresponding trip object and the number of vehicles. 
+  * The trip object has attributes such as TripID, TripType, Number of riders, Pickup Address, Dropoff Address, scheduled timestamp (desired pickup time) etc.
+* <b>For the second function, the input is:</b> the dictionary returned by the first function and the number of vehicles. 
+* <b>The Output is:</b> A panda table of matched trip requests to vehicles (vehicles used for a given day, deployed from their respective hubs).
+  * Additional information like Number of Riders, Waiting Time, Distance to Pickup, Desired Pickup Time, and also included in the table. 
+  * The intended user is the Fleet Operations Manager.
   
 <b>Model</b>
 * We created a custom model for the data APIs provided by [99P Labs](https://developer.99plabs.io/) using Nearest Neighbors (which organically developed its own clusters centered around the deployed vehicles), based on key features like <b>pickup and dropoff locations and distances, trip request time, driver-vehicle feasibility</b>, and more.
 * We first started with a simple model by relaxing these restrictions, limiting our training dataset, and developing around the goal of just maximizing the total number of trip requests that can be fulfilled in a given day while minimizing the average distance traveled.
-* After we were able to get a minimal model running, we integrated ideal restrictions (as listed above) for a more realistic and optimized fleet management system. 
+* After we were able to get a minimal model running, we integrated ideal restrictions (as listed above) for a more realistic and optimized fleet management system.
+* Different number of vehicles could be entered into the model and the metrics below could be used to compare the result of each entry. 
   * The metrics used to measure the performance of the model are: the average distance to pickup, the drivers’ average waiting for the next nearest pickup, the number of assigned trips and the number of unassigned trips for the model. The ideal situation is to minimize the average distance to pickup, the average waiting time for the next nearest pickup and the number of unassigned trips for the model.
+* The model can be used to find the minimum number of vehilces required to complete all the trips for a day (or to complete the highest number of trips for one day the company has within the past two years).
  
 ## Files
 <b>DBScan and POI Standardization.ipynb</b>
