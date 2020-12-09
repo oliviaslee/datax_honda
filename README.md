@@ -12,7 +12,7 @@
 
 ## Approach
 <b>Data Configuration</b>
-* There are two key functions.
+* <b>There are two key functions.
 * <b>For the first function, the input is:</b> The TripRequests table, the Medical Trips table and the number of vehicles. 
 * <b>The Output is:</b> A python dictionary where the key is the trip id and the value is the corresponding trip object.
   * The trip object has attributes such as TripID, TripType, Number of riders, Pickup Address, Dropoff Address, scheduled timestamp (desired pickup time) etc.
