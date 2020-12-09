@@ -34,3 +34,4 @@
 <b>clustering_model.ipynb</b>
 * In efforts to maximize profit, a clustering model was developed to minimize distance travelled by individual vehicles. 
 * A K-Means clustering was performed on the Medical Dataset, and the best k was chosen via the Elbow Method. Then, the position of the vehicles were plotted using their longitude and latitude locations. A map was also used to visualize where most of the pick-up and drop-off locations were.
+* After careful implementation, we decided that it would be difficult for the K-Means clustering algorithm to take into account other contraints such as time. Thus, we decided to stick with the continuing development of the custom model mentioned above.
