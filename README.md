@@ -28,7 +28,9 @@
 * <insert information here>
  
  <b>Honda_API.ipynb</b>
-* edit
+* Since there were many data tables pulled from the API, we decided to perform correlation analysis to get a better understanding of the data at hand. Correlation matrices were only generated for tables with relevant features, such as trip requests, safety details, information about vehicle make/model (some designed to cater towards handicap features), etc.
+* Each table had a mix of numerical and categorical variables. In order to spot correlations between certain categories, categorical variables (event_type, distracted = True/False) were one-hot encoded.
 
 <b>clustering_model.ipynb</b>
-* edit
+* In efforts to maximize profit, a clustering model was developed to minimize distance travelled by individual vehicles. 
+* A K-Means clustering was performed on the Medical Dataset, and the best k was chosen via the Elbow Method. Then, the position of the vehicles were plotted using their longitude and latitude locations. A map was also used to visualize where most of the pick-up and drop-off locations were.
