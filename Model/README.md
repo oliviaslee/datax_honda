@@ -10,6 +10,5 @@
 * Model files
   * Micro-transit query.ipynb
   * Public Simple Model.ipynb
-* Data files
-  * UPDATE
-  * UPDATE
+* Data files can be found in [this google drive](https://drive.google.com/drive/folders/1FyuwVvo6zkYEEtjqwQ5JaoUtzl740-Lm?usp=sharing)
+  * Due to the sensitive and internal nature of the data set, we've stored the data files within a Berkeley google drive where a berkeley.edu email is needed to access the files. For additional information, please contact any of the project members or mentors.
