@@ -50,6 +50,10 @@ The model has two key functions.
  <b>Honda_API.ipynb</b>
 * Since there were many data tables pulled from the API, we decided to perform correlation analysis to get a better understanding of the data at hand. Correlation matrices were only generated for tables with relevant features, such as trip requests, safety details, information about vehicle make/model (some designed to cater towards handicap features), etc.
 * Each table had a mix of numerical and categorical variables. In order to spot correlations between certain categories, categorical variables (event_type, distracted = True/False, etc.) were one-hot encoded and thus analyzed in this manner.
+* Features with the highest correlations were printed out to help, highlighting the importance of certain features as compared to others.
+* By providing more insight on individual data tables, future developers of the model may choose to increase the efficiency of the model using this analysis.
+* This data analysis also serves to aid the Honda operations manager in understanding certain patterns or trends for rides.
+
 
 <b>clustering_model.ipynb</b>
 * In efforts to maximize profit, a clustering model was developed to minimize distance travelled by individual vehicles. 
