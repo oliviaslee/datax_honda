@@ -24,7 +24,7 @@ The model has three key functions.
   * The trip object has attributes such as TripID, TripType, Number of riders, Pickup Address, Dropoff Address, scheduled timestamp (desired pickup time) etc.
 
 <b>Function 2 and 3</b>
-* <b>Input:</b> the dictionary returned by the first function, the earliest desired pickup time and the number of vehicles. 
+* <b>Input:</b> the dictionary returned by the first function, the earliest desired pickup time (for function 3) and the number of vehicles. 
 * <b>Output:</b> A Pandas table of matched trip requests to vehicles deployed from their respective hubs.
   * Additional information like Number of Riders, Waiting Time, Distance to Pickup, Desired Pickup Time etc. are also included in the table. 
   * The intended user is the Fleet Operations Manager.
