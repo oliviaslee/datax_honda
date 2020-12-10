@@ -12,12 +12,15 @@
 
 ## Approach
 <b>Data Configuration</b>
-* <b>The model has two key function.</b> 
-* <b>For the first function, the input is:</b> The TripRequests table, the Medical Trips table and the number of vehicles. 
-* <b>The Output:</b> A list that contains a python dictionary where the key is the trip id and the value is the trip object, and the eariest desired pickup time.
+<br>The model has two key functions.<br>
+<b>> Function 1</b>
+* <b>Input:</b> The TripRequests table, the Medical Trips table and the number of vehicles. 
+* <b>Output:</b> A list that contains a python dictionary where the key is the trip id and the value is the trip object, and the eariest desired pickup time.
   * The trip object has attributes such as TripID, TripType, Number of riders, Pickup Address, Dropoff Address, scheduled timestamp (desired pickup time) etc.
-* <b>For the second function, the input is:</b> the dictionary returned by the first function, the earliest desired pickup time and the number of vehicles. 
-* <b>The Output is:</b> A panda table of matched trip requests to vehicles deployed from their respective hubs.
+
+<b>> Function 2</b>
+* <b>Input:</b> the dictionary returned by the first function, the earliest desired pickup time and the number of vehicles. 
+* <b>Output:</b> A Pandas table of matched trip requests to vehicles deployed from their respective hubs.
   * Additional information like Number of Riders, Waiting Time, Distance to Pickup, Desired Pickup Time etc. are also included in the table. 
   * The intended user is the Fleet Operations Manager.
   
