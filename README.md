@@ -11,20 +11,20 @@
 * Not only are we addressing current issues and changes in demand, but we're also putting in the effort to model our engineering solutions to adjust to this new perception of mobility as a service.
 
 ## Approach
-<b>Data Configuration</b>
-<br>The model has two key functions.<br>
-<b>> Function 1</b>
+### Data Configuration
+The model has two key functions.
+<b>Function 1</b>
 * <b>Input:</b> The TripRequests table, the Medical Trips table and the number of vehicles. 
 * <b>Output:</b> A list that contains a python dictionary where the key is the trip id and the value is the trip object, and the eariest desired pickup time.
   * The trip object has attributes such as TripID, TripType, Number of riders, Pickup Address, Dropoff Address, scheduled timestamp (desired pickup time) etc.
 
-<b>> Function 2</b>
+<b>Function 2</b>
 * <b>Input:</b> the dictionary returned by the first function, the earliest desired pickup time and the number of vehicles. 
 * <b>Output:</b> A Pandas table of matched trip requests to vehicles deployed from their respective hubs.
   * Additional information like Number of Riders, Waiting Time, Distance to Pickup, Desired Pickup Time etc. are also included in the table. 
   * The intended user is the Fleet Operations Manager.
   
-<b>Model</b>
+### Model
 * We created a custom model for the data APIs provided by [99P Labs](https://developer.99plabs.io/) using Nearest Neighbors (which organically developed its own clusters centered around the deployed vehicles), based on key features like <b>pickup and dropoff locations and distances, trip request time, driver-vehicle feasibility</b>, and more.
 * We first started with a simple model by relaxing these restrictions, limiting our training dataset, and developing around the goal of just maximizing the total number of trip requests that can be fulfilled in a given day while minimizing the average distance traveled.
 * After we were able to get a minimal model running, we integrated ideal restrictions (as listed above) for a more realistic and optimized fleet management system.
