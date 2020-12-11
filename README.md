@@ -31,7 +31,7 @@ The model has three key functions.
 
 ### Model
 * We created a custom model for the data APIs provided by [99P Labs](https://developer.99plabs.io/) using Nearest Neighbors (which organically developed its own clusters centered around the deployed vehicles), based on key features like <b>pickup and dropoff locations and distances, trip request time, driver-vehicle feasibility</b>, and more.
-* The model (as detailed by the the two main functions listed in 'Data Configuration') can be used to find the minimum number of vehicles required to complete all the trips for a day (or to complete the highest number of trips for one day the company has had within the past two years).
+* The model (as detailed by the the three main functions listed in 'Data Configuration') can be used to find the minimum number of vehicles required to complete all the trips for a day (or to complete the highest number of trips for one day the company has had within the past two years).
  
 ## Files
 <b>DBScan and POI Standardization.ipynb</b>
