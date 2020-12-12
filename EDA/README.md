@@ -21,3 +21,7 @@ Contains the following files
   * Each table had a mix of numerical and categorical variables. In order to spot correlations between certain categories, categorical variables (event_type, distracted = True/False, etc.) were one-hot encoded and thus analyzed in this manner.
   * Features with the highest correlations were printed out to help, highlighting the importance of certain features as compared to others.
   * This data analysis also serves to aid the Honda operations manager in understanding certain patterns or trends for rides.
+
+* <b>Honda_visuals.ipynb</b>
+* In order to obtain general ideas of data from different tables, we also created visualizations in Python including scatter plots and bar charts.
+* The visualizations assist us to better see and understand the trends, outliers, and patterns in data from each table.
